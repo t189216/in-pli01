@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Streaming Playlist</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Streaming Playlist</h1>
+
+<form action="/playlist" method="post">
+    제목: <input type="text" name="title" />
+    아티스트: <input type="text" name="artist" />
+    스트리밍 URL: <input type="text" name="streamUrl" />
+    <button type="submit">등록</button>
+</form>
+
+<hr/>
+<ul>
+    <li th:each="playlist : ${playlists}">
+        <strong th:text="${playlist.title}"></strong>
+        <span th:text="${playlist.artist}"></span><br/>
+        <audio controls th:src="${playlist.streamUrl}"></audio>
+    </li>
+</ul>
+
+</body>
+</html>

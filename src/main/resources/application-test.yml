@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:kit_test;MODE=MYSQL
+    url: jdbc:h2:mem:pli_test;MODE=MYSQL
   jpa:
     hibernate:
       ddl-auto: create

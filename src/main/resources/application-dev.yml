@@ -2,4 +2,4 @@ server:
   port: 8090
   spring:
     datasource:
-      url: jdbc:h2:./kit_dev;MODE=MYSQL
+      url: jdbc:h2:./pli_dev;MODE=MYSQL

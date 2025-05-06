@@ -8,7 +8,7 @@ spring:
     virtual:
       enabled: true
   datasource:
-    username: lee
+    username: sa
     password:
     driver-class-name: org.h2.Driver
   jpa:
@@ -29,5 +29,5 @@ spring:
       org.springframework.transaction.interceptor: TRACE
   custom:
     site:
-      name: kit
+      name: pli
       baseUrl: "http://localhost:${server.port}"
